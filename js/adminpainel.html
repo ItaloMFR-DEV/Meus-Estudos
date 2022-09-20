@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <link href="http://fonts.cdnfonts.com/css/nova-flat" rel="stylesheet">
+        <title>Pagina Administrativa</title>
+      </head>
+
+<body>
+    <div class="ui grid stackable">
+        <div class="ui row">
+
+            <div class="ui three wide column" style="background-color: rgb(48, 48, 48);">
+                <div class="ui  container">
+
+                    <div class="ui segment">
+
+                        <div class="ui divided selection list">
+                            <a class="item">
+                                <div class="ui red horizontal label">Fruta</div>Kumquats
+                            </a>
+                            <a class="item">
+                                <div class="ui purple horizontal label">Doce</div>Sorvete
+                            </a>
+                            <a class="item">
+                                <div class="ui red horizontal label">Fruta</div>Laranja
+                            </a>
+                            <a class="item">
+                                <div class="ui horizontal label">Dog</div>
+                                Poodle
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="ui vertical buttons fluid stackable ">
+                        <div class="ui button fluid"><a href="#">Android</a></div>
+                        <div class="ui button fluid"><a href="#">Android</a></div>
+                        <div class="ui button fluid"><a href="#">Android</a></div>
+                        <div class="ui button fluid"><a href="#">Android</a></div>
+                        <div class="ui button fluid"><a href="#">Android</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui thirteen wide column" style="background-color: rgb(243, 243, 243);">
+
+                <div class="ui divider"></div>
+
+                <div class="ui container">
+                    <div class="ui content">
+                        <h4>Nome da Pagina</h4>
+                    </div>
+                </div>
+
+                <div class="ui divider"></div>
+
+                <div class="ui container">
+                    <div class="ui grid stackable">
+                        <div class="ui nine wide column aligned">
+
+                            <div class="ui segment">
+
+                                <div class="ui right labeled input fluid">
+                                    <label class="ui label" for="label">Titulo da Postagem</label>
+                                    <input type="text" id="titulo" placeholder="Digite aqui...">
+                                </div>
+                                <br>
+
+                                <textarea id="desc" rows="10" cols="55" maxlength="5000" style="max-width: 575px;"></textarea>
+
+                                <div class="ui right labeled input fluid">
+                                    <label class="ui right pointing green label" for="">Imagen URL</label>
+                                    <input size="50" type="text" placeholder="http://...">
+                                    <div class="ui basic label">
+                                        <i class="ui check green icon"></i>
+                                    </div>
+                                </div>
+
+                                <div class="ui right labeled input fluid">
+                                    <label class="ui label" for="">Link para Download</label>
+                                    <input id="link" size="50" type="text" placeholder="http://...">
+                                    <div class="ui basic label">
+                                        <i class="ui check green icon"></i>
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <button type="submit" onclick="createPost()" class="ui large green button">Enviar</button>
+                                <button type="submit" class="ui large grey button">Limpar</button>
+
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="ui seven wide column">
+                            <div class="ui segment stackable ">
+                                <div class="ui header">Configurações</div>
+                                <div class="ui divider"></div>
+                                <div class="ui container ">
+                                    <div class="ui right labeled input fluid">
+                                        <label class="ui label" for="">Categoria</label>
+                                        <input size="50" type="text" placeholder="Ex.. Android">
+                                        <div class="ui basic label">
+                                            <!-- <i class="ui check green icon"></i> -->
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="ui right labeled input fluid blue">
+                                        <label class="ui label" for="">Categoria</label>
+                                        <input size="50" type="text" placeholder="Ex.. Android">
+                                        <div class="ui basic label">
+                                            <!-- <i class="ui check green icon"></i> -->
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="ui right labeled input fluid">
+                                        <label class="ui label" for="">Categoria</label>
+                                        <input size="50" type="text" placeholder="Ex.. Android">
+                                        <div class="ui basic label">
+                                            <!-- <i class="ui check green icon"></i> -->
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="ui right labeled input fluid">
+                                        <label class="ui label" for="">Categoria</label>
+                                        <input size="50" type="text" placeholder="Ex.. Android">
+                                        <div class="ui basic label">
+                                            <!-- <i class="ui check green icon"></i> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="ui segment">
+                                <div class="ui header">Categoria</div>
+                                <div class="ui divider"></div>
+                                <div class="ui section">
+
+                                    <div class="ui right labeled input fluid">
+                                        <label class="ui label" for="">Categoria</label>
+                                        <input size="50" type="text" placeholder="http://...">
+                                        <div class="ui basic label">
+                                            <i class="ui check green icon"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            
+
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+                </div>
+
+                
+
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- footer  -->
+    <div class="ui vertical footer segment">
+        <div class="ui center aligned container">
+            <div class="ui stackable grid">
+                <div class="three wide column">
+                    <h4 class="ui header">Atalhos</h4>
+                    <div class="ui link list">
+                        <a class="item" target="_blank"
+                            href="https://www.transifex.com/organization/semantic-org/">Google</a>
+                        <a class="item" target="_blank"
+                            href="https://github.com/Semantic-Org/Semantic-UI/issues">Youtube</a>
+                        <a class="item" target="_blank" href="https://gitter.im/Semantic-Org/Semantic-UI">Instagram</a>
+                        <a class="item" target="_blank" href="/cla.html">Linkedin</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui header">Repositorios</h4>
+                    <div class="ui link list">
+                        <a class="item" href="https://github.com/Semantic-Org/Semantic-UI" target="_blank">GitHub</a>
+                        <a class="item" href="http://forums.semantic-ui.com" target="_blank">Forum Semantic-UI</a>
+                        <a class="item" href="http://1.semantic-ui.com">Doc 1.x</a>
+                        <a class="item" href="http://legacy.semantic-ui.com">Doc 0.x</a>
+                    </div>
+                </div>
+                <div class="seven wide right floated column">
+
+                    <form action="../index.html" method=" " target="_top">
+                        <button type="submit" class="ui large teal button">SAIR</button>
+                    </form>
+                </div>
+            </div>
+            <div class="ui section divider"></div>
+            Desenvolvido por <b>Italo Miguel F. Ribeiro</b> -
+            <span style="font-family: Tahoma ; margin: 0px;"><b>Im</b></span><span class="ui Pulsar"
+                style="font-family: Tahoma ; color: #a52a2a; font-size: medium; margin: 0px;"><b>.D</b></span><span
+                style="font-family: Tahoma ; margin: 0px; font-size: medium;"><b>EV</b></span><i
+                class="ui icon check yellow"></i>
+        </div>
+    </div>
+
+    <script>
+        $('.Pulsar')
+            // Inicio do Looping
+            .transition('set looping')
+            // Fim do looping
+            .transition({
+                animation: 'pulse',
+                duration: '1s',
+            })
+            ;
+        ;
+    </script>
+
+</body>
+
+</html>
